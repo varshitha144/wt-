@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        section {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Account Info</h2>
+        <form>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age-group">Which age group do you belong to? *</label>
+            <select id="age-group" name="age-group" required>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18 - 24</option>
+                <option value="25-34">25 - 34</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="country">Country residing in currently *</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="pincode">Pincode *</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="state">State *</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="city">City/District *</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="profession">Profession *</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="qualification">Highest Qualification *</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="graduation-year">Year of Graduation *</label>
+            <input type="text" id="graduation-year" name="graduation-year" required>
+
+            <label for="abc">CGPA</label>
+            <input type="text" id="abc" name="abc">
+
+            <label for="roll-no">Roll No. *</label>
+            <input type="text" id="roll-no" name="roll-no">
+
+            <label for="degree">Degree *</label>
+            <input type="text" id="degree" name="degree">
+
+            <label for="department">Department *</label>
+            <input type="text" id="department" name="department">
+
+            <label for="study-year">Study Year *</label>
+            <input type="text" id="study-year" name="study-year">
+
+            <!-- Add more fields as needed -->
+
+            <input type="submit" value="Save Profile">
+        </form>
+    </section>
+
+</body>
+</html>
